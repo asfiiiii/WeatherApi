@@ -1,0 +1,309 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(223, 222, 222);
+    filter: blur(0px);
+
+
+}
+
+main{
+    width: 90%;
+    height: 100vh;
+   
+}
+
+main nav
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 17px 0px;
+    
+}
+
+main nav h2
+{
+    text-decoration: none;
+    padding: 0px 10px;
+    font-size: 2rem;
+    font-weight: 700;
+    transition: 0.2s linear;
+}
+main nav h2:hover
+{
+    color: rgb(247, 69, 15);
+}
+
+main nav .toggle
+{
+    display: none;
+    outline: none;
+
+}
+
+main nav .nav_links
+{
+    padding: 0px 20px;
+}
+
+main nav .nav_links a
+{
+    padding: 0px 30px;
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: black;
+    font-weight: 600;
+    transition: 0.2s linear;
+
+
+}
+main nav .nav_links a:hover
+{
+    color: rgb(247, 69, 15);
+
+    
+}
+
+section
+{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 140px;
+}
+
+section .para
+{
+    font-size: 2.6rem;
+    font-weight: 600;
+    font-family:cursive;
+    transition: .2s linear;
+    margin-bottom: 20px;
+}
+
+
+section .box
+{
+    border: 2px solid rgb(255, 255, 255);
+    width: 470px;
+    height: 80px;
+    border-radius: 50px;
+    background-color: rgb(253, 253, 253);
+    padding-top: 20px;
+    padding: 20px 10px;
+    transition: .2s linear;
+    overflow: hidden;
+    
+}
+section .box .search_box
+{
+  
+    display: flex;
+    justify-content: center;
+   
+}
+
+section .box input
+{
+    height: 40px;
+    width: 300px;
+    border-radius: 2%;
+    border: none;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    
+}
+input:focus {
+  outline: none;
+  box-shadow: none;
+  font-weight: 500;
+  
+}
+section .box .search
+{
+    background: rgb(196, 34, 5);
+    color: white;
+    border-radius: 50%;
+    border: none;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+section .box .marker
+{
+    background: rgb(255, 255, 255);
+    color:rgb(196, 34, 5);
+    border-radius: 50%;
+    border: none;
+    height: 40px;
+    width: 55px;
+    font-size: 1.8rem;
+    display: flex;
+    margin-right: 5px;
+    font-size: 2.3rem;
+    align-items: center;
+    justify-content: center;
+}
+
+section .box .weather_box
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+section .weather_box img
+{
+    width: 200px;
+    height: 200px;
+    padding-bottom: 20px;
+    margin-top: 20px;
+}
+
+section .weather_box .text
+{
+    font-weight: 700;
+    font-size: 2rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-transform: capitalize;
+    padding-bottom: 0px;
+}
+section .weather_box .desc
+{
+    font-weight: 600;
+    font-size: 1.3rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-transform: capitalize;
+}
+section .weather_features
+{
+    display: none;
+    justify-content: space-between;
+    margin: 20px 40px;
+    margin-left: 45px;
+    
+    
+}
+
+section .weather_features .wind
+{
+   
+    font-weight: 500;
+    display: flex;
+    
+    
+}
+section .weather_features .wiind
+{
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+section .weather_features .hum_p
+{
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-top: 5px;
+    padding-left: 5px;
+}
+section .weather_features .humidity
+{
+   
+    font-weight: 500;
+    display: flex;
+}
+section .weather_features .hum
+{
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+section .weather_features .wind_p
+{
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-top: 5px;
+    padding-left: 5px;
+}
+
+
+@media (max-width:720px)
+{
+
+main nav .nav_links
+{
+    display: none;
+   
+   
+    
+}
+
+main nav .toggle
+{
+    display: block;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+section .para
+{
+    font-size: 2.3rem;
+    font-weight: 600;
+    font-family:cursive;
+
+}
+
+/* 
+main nav .nav_links
+{
+    display: flex;
+   position: absolute;
+   top: 5%;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 12px;
+  justify-content: space-around;
+  left: 67%;
+  background-color: rgb(246, 84, 84);
+  margin-right: 40px;
+  transition: 0.2s linear;
+  height: 200px;
+    
+}
+
+main nav .nav_links a
+{
+   color: white;
+   font-weight: 550;
+
+} */
+
+}
+
+@media (max-width:610px)
+{
+    section .box
+{
+    border: 2px solid rgb(255, 255, 255);
+    width: 370px;
+    border-radius: 50px;
+    background-color: rgb(253, 253, 253);
+    padding-top: 20px;
+    padding: 20px 10px;
+}
+section .para
+{
+    font-size: 1.76rem;
+    font-weight: 600;
+    font-family:cursive;
+    text-align: center;
+
+}
+}

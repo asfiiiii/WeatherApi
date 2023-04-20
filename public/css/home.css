@@ -1,0 +1,210 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    filter: blur(0px);
+}
+
+main{
+    width: 90%;
+    height: 100vh;
+   
+}
+
+main nav
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 17px 0px;
+    
+}
+
+main nav h2
+{
+    text-decoration: none;
+    padding: 0px 10px;
+    font-size: 2rem;
+    font-weight: 700;
+    transition: 0.2s linear;
+}
+main nav h2:hover
+{
+    color: rgb(247, 69, 15);
+}
+
+main nav .toggle
+{
+    display: none;
+    outline: none;
+
+}
+
+main nav .nav_links
+{
+    padding: 0px 20px;
+}
+
+main nav .nav_links a
+{
+    padding: 0px 30px;
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: black;
+    font-weight: 600;
+    transition: 0.2s linear;
+
+
+}
+main nav .nav_links a:hover
+{
+    color: rgb(247, 69, 15);
+
+    
+}
+
+section
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 120px;
+    margin-left: 30px;
+}
+
+section .img 
+{
+    
+    order: 2;
+}
+section .img img
+{
+    width: 600px;
+}
+section .body
+{
+    display: flex;
+    flex-direction: column;
+    order: 1;
+}
+section .body h2
+{
+ 
+    font-size: 2.5rem;
+    font-weight: 700;
+
+}   
+section .body p
+{
+ 
+    font-size: 1.3rem;
+
+}   
+section .body .butt
+{
+
+    width: 180px;
+    font-size: 1.5rem;
+    padding: 10px 10px;
+    margin-top: 10px;
+    font-weight: 600;
+
+}  
+
+
+@media (max-width:1200px)
+{
+    section
+{
+    flex-wrap: wrap;
+}
+section .body p
+{
+ 
+    font-size: 1.3rem;
+
+}   
+section .img img
+{
+    width: 500px;
+    margin-bottom: 50px;
+}
+
+section .body 
+{
+ 
+    order: 2;
+
+}   
+section .img
+{
+    order: 1;
+}
+
+section
+{
+    
+    margin-top: 50px;
+    margin-left: 30px;
+}
+
+/*////////*/
+
+main nav .nav_links
+{
+    display: none;
+}
+
+/* .active nav .nav_links
+{
+    display: flex;
+   position: absolute;
+   top: 0;
+   left: 0;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(246, 84, 84);
+  transition: 0.2s linear;
+  height: 100vh;
+  width: 100%;
+    transform: translateX(0);    
+} */
+
+/* .active nav .nav_links a
+{
+   color: white;
+   font-weight: 550;
+   padding: 20px 0px;
+
+} */
+
+
+main nav .toggle
+{
+    display: block;
+    cursor: pointer;
+    border: none;
+    background-color: inherit;
+    z-index: 9999;
+}
+main nav .toggle .hehe
+{
+   font-size: 28px;
+   font-weight: 600;
+}
+}
+
+@media (max-width:730px)
+{
+    main nav .nav_links
+{
+   
+   
+  left: 60%;
+ 
+}
+}

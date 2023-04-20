@@ -1,0 +1,208 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+
+}
+
+main{
+    width: 90%;
+    height: 100vh;
+   
+}
+
+main nav
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 17px 0px;
+    
+}
+
+main nav h2
+{
+    text-decoration: none;
+    padding: 0px 10px;
+    font-size: 2rem;
+    font-weight: 700;
+    transition: 0.2s linear;
+}
+main nav h2:hover
+{
+    color: rgb(247, 69, 15);
+}
+
+main nav .toggle
+{
+    display: none;
+    outline: none;
+
+}
+
+main nav .nav_links
+{
+    padding: 0px 20px;
+}
+
+main nav .nav_links a
+{
+    padding: 0px 30px;
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: black;
+    font-weight: 600;
+    transition: 0.2s linear;
+
+
+}
+main nav .nav_links a:hover
+{
+    color: rgb(247, 69, 15);
+
+    
+}
+
+.box
+{
+    display: flex;
+    align-items: flex-start;
+    height: 700px;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 80px
+    
+}
+
+.box .para h3
+{
+    font-size: 2.6rem;
+    color: rgb(210, 5, 5);
+    
+}
+.box .para .text
+{
+    font-size: 1.8rem;
+    margin-bottom: 0px;
+    font-weight: 470;
+    
+}
+.box .link
+{
+    margin-top: 20px;
+    border-radius: 5px;
+    width: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.box .link .linnk
+{
+    padding: 16px 10px;
+    border-radius: 5px;
+    overflow:hidden;
+    background-color:  rgb(244, 244, 244);
+    white-space: nowrap;
+    
+}
+.box .link .btn 
+{
+    padding: 20px 0px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom: 8px;
+
+    
+}
+.box .link .btn button 
+{
+    padding: 14px 20px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    color: rgb(102, 102, 102);
+    border: none;
+
+    
+}
+
+
+
+
+
+
+@media (max-width:1000px)
+{
+
+main nav .nav_links
+{
+    display: none;
+   
+   
+    
+}
+
+main nav .toggle
+{
+    display: block;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.box
+{
+    margin-left: 15px
+    
+}
+.box .link
+{
+    margin-top: 20px;
+    border-radius: 5px;
+    max-width: 200px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+}
+.box .link .linnk
+{
+    width: 200px;  
+    
+}
+
+.box .para h3
+{
+    font-size: 1.8rem;
+    color: rgb(210, 5, 5);
+    
+}
+.box .para .text
+{
+    font-size: 1.2rem;
+    font-weight: 500;
+    
+}
+
+.box .link .btn 
+{
+   
+    position: relative;
+    bottom: 18px;
+    margin-left: 4px;
+
+    
+}
+
+
+}
+
